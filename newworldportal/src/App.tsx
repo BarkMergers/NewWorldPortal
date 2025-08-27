@@ -1,6 +1,6 @@
 import { useMsal } from '@azure/msal-react';                
 import { loginRequest } from './authConfig';                
-import './app.css'
+import './App.css'
 
 
 
