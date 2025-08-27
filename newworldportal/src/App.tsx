@@ -34,13 +34,16 @@ const App = () => {
 
 
             <a href="https://www.admin.nice-beach-erikson.autos/" target="_blank">
+                <div className="portalLink">
+                       admin.nice-beach-erikson.autos
+                </div> 
+            </a>
 
-
-            <span className="portalLink">
-                   admin.nice-beach-erikson.autos
-            </span> 
-
-                </a>
+            <a href="https://www.company1.nice-beach-erikson.autos/" target="_blank">
+                <div className="portalLink">
+                    admin.nice-beach-erikson.autos
+                </div>
+            </a>
 
         </>
     );
