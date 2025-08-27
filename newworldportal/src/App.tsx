@@ -1,8 +1,6 @@
 import { useMsal } from '@azure/msal-react';                
 import { loginRequest } from './authConfig';                
 import './App.css'
-import { useState } from 'react';
-
 
 
 const App = () => {
