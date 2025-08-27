@@ -17,13 +17,22 @@ const App = () => {
     const handleLogout = () => {                            
         instance.logoutPopup();     
 
-        setLogout1("https://www.admin.nice-beach-erikson.autos/logout");
-        setLogout2("https://www.company1.nice-beach-erikson.autos/logout");
+        const childSites = [
+            "https://www.admin.nice-beach-erikson.autos/logout",
+            "https://www.company1.nice-beach-erikson.autos/logout"
+        ];
+
+        // Open logout tabs
+        childSites.forEach(url => {
+            window.open(url, "_blank", "width=400,height=400");
+        });
+
+
+
 
     };                                                      
 
-    const [logout1, setLogout1] = useState("");
-    const [logout2, setLogout2] = useState("");
+
 
 
 
@@ -31,8 +40,6 @@ const App = () => {
         <>
             <div>Here are your portal programs. IF you are not logged in, you wont be able to access them!</div>
 
-            <iframe src={logout1}></iframe>
-            <iframe src={logout2}></iframe>
 
 
 

@@ -401,6 +401,15 @@
       }
     }
   }
+  .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    --tabs-height: auto;
+    --tabs-direction: row;
+    --tab-height: calc(var(--size-field, 0.25rem) * 10);
+    height: var(--tabs-height);
+    flex-direction: var(--tabs-direction);
+  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
