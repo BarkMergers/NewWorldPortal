@@ -41,7 +41,7 @@ const App = () => {
 
             <a href="https://www.company1.nice-beach-erikson.autos/" target="_blank">
                 <div className="portalLink">
-                    admin.nice-beach-erikson.autos
+                    company1.nice-beach-erikson.autos
                 </div>
             </a>
 
