@@ -5,11 +5,34 @@
   text-align: center;
 }
 
+
+.portalLink {
+    margin: 60px;
+    border: 1px solid silver;
+    padding: 50px;
+    display: inline-block;
+    transition: 0.1s;
+    background: #444;
+}
+
+
+.portalLink:hover {
+    background: silver;
+}
+
+
+
+
+
+
+
+
+
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);

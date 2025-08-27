@@ -1,5 +1,8 @@
 import { useMsal } from '@azure/msal-react';                
 import { loginRequest } from './authConfig';                
+import './app.css'
+
+
 
 const App = () => {
     const { instance, accounts } = useMsal();               
@@ -16,7 +19,7 @@ const App = () => {
 
     return (
         <>
-            <div>First make sure you are logged in</div>
+            <div>Here are your portal programs. IF you are not logged in, you wont be able to access them!</div>
 
             <div>
                 {accounts.length > 0 ? (                                      
@@ -29,9 +32,15 @@ const App = () => {
                 )}                                                            
             </div >
 
-            <div>Then this link should be able to take you straight to the other website and you will be logged in</div>
 
-            <a href="https://www.admin.nice-beach-erikson.autos/">admin.nice-beach-erikson.autos</a>
+            <a href="https://www.admin.nice-beach-erikson.autos/" target="_blank">
+
+
+            <span className="portalLink">
+                   admin.nice-beach-erikson.autos
+            </span> 
+
+                </a>
 
         </>
     );
