@@ -22,10 +22,10 @@ const App = () => {
                 {accounts.length > 0 ? (                                      
                     <>                                                        
                         <p>Welcome, {accounts[0].username}</p>                
-                        <button onClick = { handleLogout } > Logout</button>        
+                        <button className="btn btn-primary" onClick = { handleLogout } > Logout</button>        
                     </>                                                       
                 ) : (                                                         
-                    <button onClick = { handleLogin }> Login with Azure</button>   
+                        <button className="btn btn-primary" onClick = { handleLogin }> Login with Azure</button>   
                 )}                                                            
             </div >
 
