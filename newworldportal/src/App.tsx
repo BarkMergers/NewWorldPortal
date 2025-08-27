@@ -22,10 +22,12 @@ const App = () => {
 
         // Open logout tabs
         childSites.forEach(url => {
-            window.open(url, "_blank", "width=400,height=400");
+            window.open(url, "_blank", "width=400,height=200");
         });
 
 
+        window.location.href =
+            "https://login.microsoftonline.com/3fdf479e-e456-4ae5-9431-657da2d108ec/oauth2/v2.0/logout?post_logout_redirect_uri=https://nice-island-0b76a3f1e.2.azurestaticapps.net/";
 
 
     };                                                      
