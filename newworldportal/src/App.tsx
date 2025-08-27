@@ -1,6 +1,7 @@
 import { useMsal } from '@azure/msal-react';                
 import { loginRequest } from './authConfig';                
 import './App.css'
+import { useState } from 'react';
 
 
 
@@ -14,12 +15,27 @@ const App = () => {
     };                                                      
 
     const handleLogout = () => {                            
-        instance.logoutPopup();                             
+        instance.logoutPopup();     
+
+        setLogout1("https://www.admin.nice-beach-erikson.autos/logout");
+        setLogout2("https://www.company1.nice-beach-erikson.autos/logout");
+
     };                                                      
+
+    const [logout1, setLogout1] = useState("");
+    const [logout2, setLogout2] = useState("");
+
+
 
     return (
         <>
             <div>Here are your portal programs. IF you are not logged in, you wont be able to access them!</div>
+
+            <iframe src={logout1}></iframe>
+            <iframe src={logout2}></iframe>
+
+
+
 
             <div>
                 {accounts.length > 0 ? (                                      
