@@ -11,8 +11,13 @@
     border: 1px solid silver;
     padding: 50px;
     display: inline-block;
-    transition: 0.1s;
+    transition: 0.2s;
     background: #444;
+    min-height: 300px;
+}
+
+.portalHolder {
+    overflow-x: scroll;
 }
 
 

@@ -34,35 +34,46 @@ const App = () => {
 
     return (
         <>
-            <div>Here are your portal programs. IF you are not logged in, you wont be able to access them!</div>
-
-
-
 
 
             <div>
                 {accounts.length > 0 ? (                                      
-                    <>                                                        
-                        <p>Welcome, {accounts[0].username}</p>                
-                        <button className="btn btn-primary" onClick = { handleLogout } > Logout</button>        
-                    </>                                                       
-                ) : (                                                         
-                        <button className="btn btn-primary" onClick = { handleLogin }> Login with Azure</button>   
+                    <div>                                                                    
+                        <button className="btn btn-primary" onClick={handleLogout}>Logout</button>        
+
+                        <div style={{ padding: "30px" }} >
+                            Welcome, {accounts[0].username}! Here are you portal apps.
+                        </div>
+
+                    </div>                                                       
+                ) : (     
+                    <div>
+                        <button className="btn btn-primary" onClick={handleLogin}> Login with Azure</button>   
+
+                        <div style={{ padding: "30px"}} >
+                            Here are you portal apps. Ensure you are logged in before trying to acces them
+                        </div>
+                    </div>
                 )}                                                            
             </div >
 
 
-            <a href="https://www.admin.nice-beach-erikson.autos/" target="_blank">
-                <div className="portalLink">
-                       admin.nice-beach-erikson.autos
-                </div> 
-            </a>
 
-            <a href="https://www.company1.nice-beach-erikson.autos/" target="_blank">
-                <div className="portalLink">
-                    company1.nice-beach-erikson.autos
-                </div>
-            </a>
+            <div className="portalHolder">
+
+                <a href="https://www.admin.nice-beach-erikson.autos/" target="_blank">
+                    <div className="portalLink">
+                           admin.nice-beach-erikson.autos
+                    </div> 
+                </a>
+
+                <a href="https://www.company1.nice-beach-erikson.autos/" target="_blank">
+                    <div className="portalLink">
+                        company1.nice-beach-erikson.autos
+                    </div>
+                </a>
+
+            </div>
 
         </>
     );
