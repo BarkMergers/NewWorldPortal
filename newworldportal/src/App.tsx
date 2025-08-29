@@ -51,7 +51,7 @@ const App = () => {
                         <button className="btn btn-primary" onClick={handleLogin}> Login with Azure</button>   
 
                         <div style={{ padding: "30px"}} >
-                            Here are you portal apps. Ensure you are logged in before trying to acces them
+                            Here are you portal apps. Ensure you are logged in before trying to access them
                         </div>
                     </div>
                 )}                                                            
